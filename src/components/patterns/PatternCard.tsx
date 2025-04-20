@@ -1,6 +1,5 @@
-
 import { Link } from 'react-router-dom';
-import { Yarn, BookHeart, Star, Flower, Heart, BookOpen } from "lucide-react";
+import { Thread, BookHeart, Star, Flower, Heart, BookOpen } from "lucide-react";
 
 export interface PatternProps {
   id: number;
@@ -16,7 +15,7 @@ export interface PatternProps {
 const patternIcon = (title: string) => {
   // Pick an icon to match pattern based on its name
   if (title.toLowerCase().includes('fox')) return <BookHeart className="text-terracotta" />;
-  if (title.toLowerCase().includes('blanket')) return <Yarn className="text-sage" />;
+  if (title.toLowerCase().includes('blanket')) return <Thread className="text-sage" />;
   if (title.toLowerCase().includes('shawl')) return <Star className="text-yellow-600" />;
   if (title.toLowerCase().includes('pillow')) return <Flower className="text-pink-400" />;
   if (title.toLowerCase().includes('hat')) return <Heart className="text-pink-400" />;
@@ -77,7 +76,7 @@ const PatternCard = ({ pattern }: { pattern: PatternProps }) => {
           {/* Bonus tip/quote */}
           {pattern.tip && (
             <div className="mb-2 italic text-base text-terracotta font-medium font-playfair" style={{ fontFamily: "'Playfair Display', cursive, serif" }}>
-              “{pattern.tip}”
+              "{pattern.tip}"
             </div>
           )}
           <div className="mt-3 flex justify-between items-center">
@@ -91,4 +90,3 @@ const PatternCard = ({ pattern }: { pattern: PatternProps }) => {
 };
 
 export default PatternCard;
-
