@@ -1,73 +1,68 @@
-# Welcome to your Lovable project
+# 🧶 StitchCraft Studio Nexus
 
-## Project info
+**StitchCraft Studio Nexus** is a vibrant, beautifully designed web app that brings the handmade world to life. It combines a customizable marketplace, curated patterns library, and modern UI to create the ultimate hub for crafters and artisans.
 
-**URL**: https://lovable.dev/projects/cbc9461c-401e-4163-ae3f-a9ebdbc8e994
+🌐 **Live Site:** [stitchcraft-studio-nexus.lovable.app](https://stitchcraft-studio-nexus.lovable.app)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+### 🛒 Marketplace
+- Browse handcrafted goods: scarves, plushies, pillows, plant hangers & more.
+- Clean product cards with hover effects, pricing, categories, and customizable tags.
+- Minimalist UI focused on clarity, accessibility, and warmth.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cbc9461c-401e-4163-ae3f-a9ebdbc8e994) and start prompting.
+### 🧵 Patterns Library
+- Discover crochet/knitting patterns by difficulty and time required.
+- Responsive grid layout with dynamic cards.
+- Clearly labeled tags for beginner, intermediate, and free patterns.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🌙 Theme Support
+- Supports Light, Dark, and Dim modes via a toggle.
+- Beautiful, soft pastel themes crafted for relaxing browsing.
 
-**Use your preferred IDE**
+### 📱 Responsive & Accessible
+- Fully responsive on desktop, tablet, and mobile.
+- Semantic HTML and accessible navigation for screen readers.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧰 Tech Stack
 
-Follow these steps:
+- **Frontend:** React + TypeScript + Vite  
+- **Styling:** Tailwind CSS, ShadCN UI, Framer Motion  
+- **Routing:** React Router  
+- **Assets:** Custom product imagery, placeholders, dynamic cards  
+- **Deployment:** Lovable.app (custom hosting)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Getting Started
 
-# Step 3: Install the necessary dependencies.
-npm i
+To run the project locally:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/your-username/stitchcraft-studio-nexus.git
+cd stitchcraft-studio-nexus
+npm install
 npm run dev
-```
+src/
+├── components/          # Reusable UI components (Card, Header, Footer, etc.)
+├── pages/               # Home, Patterns, Shop
+├── assets/              # Product images, icons, backgrounds
+├── context/             # Theme and UI context
+├── styles/              # Global CSS and theme variables
+├── data/                # Product and pattern JSON data
+└── App.tsx              # Main app routes and layout
+🔮 Planned Improvements
+🧠 AI-assisted pattern suggestions
 
-**Edit a file directly in GitHub**
+📤 User-submitted listings and pattern uploads
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+📱 PWA support for offline use
 
-**Use GitHub Codespaces**
+💬 Integrated community reviews and comments
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/cbc9461c-401e-4163-ae3f-a9ebdbc8e994) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+📜 License
+MIT License © 2025 Mouhamed
