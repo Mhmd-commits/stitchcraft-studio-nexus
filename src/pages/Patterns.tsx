@@ -3,12 +3,13 @@ import { useState } from "react";
 import MainLayout from "@/components/layout/MainLayout";
 import PatternCard, { PatternProps } from "@/components/patterns/PatternCard";
 
-// Mock patterns data
+// Mock patterns data with pastel SVG placeholders
 const patterns: PatternProps[] = [
   {
     id: 1,
     title: "Summer Garden Tote Bag",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    // pastel pink/peach background
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FFDEE2'/%3e%3c/svg%3e",
     difficulty: "Beginner",
     timeEstimate: "2-3 hours",
     isFree: true,
@@ -17,7 +18,7 @@ const patterns: PatternProps[] = [
   {
     id: 2,
     title: "Cozy Chevron Blanket",
-    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FDE1D3'/%3e%3c/svg%3e",
     difficulty: "Intermediate",
     timeEstimate: "10-15 hours",
     isFree: false,
@@ -26,7 +27,7 @@ const patterns: PatternProps[] = [
   {
     id: 3,
     title: "Woodland Fox Amigurumi",
-    image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FFDEE2'/%3e%3c/svg%3e",
     difficulty: "Intermediate",
     timeEstimate: "5-6 hours",
     isFree: true,
@@ -35,7 +36,7 @@ const patterns: PatternProps[] = [
   {
     id: 4,
     title: "Modern Farmhouse Pillow",
-    image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FDE1D3'/%3e%3c/svg%3e",
     difficulty: "Beginner",
     timeEstimate: "3-4 hours",
     isFree: true,
@@ -44,7 +45,7 @@ const patterns: PatternProps[] = [
   {
     id: 5,
     title: "Vintage Lace Shawl",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FFDEE2'/%3e%3c/svg%3e",
     difficulty: "Advanced",
     timeEstimate: "20+ hours",
     isFree: false,
@@ -53,7 +54,7 @@ const patterns: PatternProps[] = [
   {
     id: 6,
     title: "Chunky Bobble Hat",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FDE1D3'/%3e%3c/svg%3e",
     difficulty: "Beginner",
     timeEstimate: "2-3 hours",
     isFree: true,
@@ -64,9 +65,9 @@ const patterns: PatternProps[] = [
 const Patterns = () => {
   const [difficulty, setDifficulty] = useState<string | null>(null);
   const [freeOnly, setFreeOnly] = useState(false);
-  
+
   const difficulties = ["All", "Beginner", "Intermediate", "Advanced"];
-  
+
   const filteredPatterns = patterns.filter(pattern => {
     if (difficulty && difficulty !== "All" && pattern.difficulty !== difficulty) return false;
     if (freeOnly && !pattern.isFree) return false;
@@ -135,3 +136,4 @@ const Patterns = () => {
 };
 
 export default Patterns;
+
