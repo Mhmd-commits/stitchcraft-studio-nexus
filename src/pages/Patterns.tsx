@@ -3,62 +3,67 @@ import { useState } from "react";
 import MainLayout from "@/components/layout/MainLayout";
 import PatternCard, { PatternProps } from "@/components/patterns/PatternCard";
 
-// Mock patterns data with pastel SVG placeholders
+// Patterns data with tips (no images, just yarn texture and pastel gradient in card)
 const patterns: PatternProps[] = [
   {
     id: 1,
     title: "Summer Garden Tote Bag",
-    // pastel pink/peach background
-    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FFDEE2'/%3e%3c/svg%3e",
+    image: "", // unused now
     difficulty: "Beginner",
     timeEstimate: "2-3 hours",
     isFree: true,
-    slug: "summer-garden-tote"
+    slug: "summer-garden-tote",
+    tip: "Perfect for freshening up your summer outfits!"
   },
   {
     id: 2,
     title: "Cozy Chevron Blanket",
-    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FDE1D3'/%3e%3c/svg%3e",
+    image: "",
     difficulty: "Intermediate",
     timeEstimate: "10-15 hours",
     isFree: false,
-    slug: "cozy-chevron-blanket"
+    slug: "cozy-chevron-blanket",
+    tip: "Great for cozy nights in."
   },
   {
     id: 3,
     title: "Woodland Fox Amigurumi",
-    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FFDEE2'/%3e%3c/svg%3e",
+    image: "",
     difficulty: "Intermediate",
     timeEstimate: "5-6 hours",
     isFree: true,
-    slug: "woodland-fox-amigurumi"
+    slug: "woodland-fox-amigurumi",
+    tip: "Kids adore this cuddly woodland friend!"
   },
   {
     id: 4,
     title: "Modern Farmhouse Pillow",
-    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FDE1D3'/%3e%3c/svg%3e",
+    image: "",
     difficulty: "Beginner",
     timeEstimate: "3-4 hours",
     isFree: true,
-    slug: "modern-farmhouse-pillow"
+    slug: "modern-farmhouse-pillow",
+    tip: "Adds a handmade touch to any space."
   },
   {
     id: 5,
     title: "Vintage Lace Shawl",
-    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FFDEE2'/%3e%3c/svg%3e",
+    image: "",
     difficulty: "Advanced",
     timeEstimate: "20+ hours",
     isFree: false,
-    slug: "vintage-lace-shawl"
+    slug: "vintage-lace-shawl",
+    tip: "Chic, elegant, and timeless."
   },
   {
     id: 6,
     title: "Chunky Bobble Hat",
-    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FDE1D3'/%3e%3c/svg%3e",
+    image: "",
     difficulty: "Beginner",
     timeEstimate: "2-3 hours",
     isFree: true,
-    slug: "chunky-bobble-hat"
+    slug: "chunky-bobble-hat",
+    tip: "A quick, warm project—great for gifts."
   }
 ];
 
@@ -136,4 +141,3 @@ const Patterns = () => {
 };
 
 export default Patterns;
-
