@@ -1,9 +1,8 @@
-
 import { useState } from "react";
 import MainLayout from "@/components/layout/MainLayout";
 import ProductCard, { ProductProps } from "@/components/shop/ProductCard";
 
-// Mock products data
+// Updated products data with pinkish-toned images matching crochet categories better
 const products: ProductProps[] = [
   {
     id: 1,
@@ -17,7 +16,7 @@ const products: ProductProps[] = [
   {
     id: 2,
     title: "Cozy Winter Scarf",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1589652717521-46884f5d9bf8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // pinkish pink scarf image
     price: 34.99,
     category: "Wearables",
     customizable: true,
@@ -26,7 +25,7 @@ const products: ProductProps[] = [
   {
     id: 3,
     title: "Cute Amigurumi Bear",
-    image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1558788353-f76d92427f16?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // cute stuffed toy with slight pink background
     price: 29.99,
     category: "Amigurumi",
     customizable: false,
@@ -35,7 +34,7 @@ const products: ProductProps[] = [
   {
     id: 4,
     title: "Modern Wall Hanging",
-    image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1605909007005-4eda3bf61468?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // wall hanging with pink tones
     price: 69.99,
     category: "Home Décor",
     customizable: true,
@@ -44,7 +43,7 @@ const products: ProductProps[] = [
   {
     id: 5,
     title: "Hand-knit Beanie",
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1501088430049-71c79fa3283e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // pinkish knit beanie
     price: 27.99,
     category: "Wearables",
     customizable: true,
@@ -53,7 +52,7 @@ const products: ProductProps[] = [
   {
     id: 6,
     title: "Crochet Plant Hanger",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // plant hanger with soft pink background
     price: 19.99,
     category: "Home Décor",
     customizable: false,
