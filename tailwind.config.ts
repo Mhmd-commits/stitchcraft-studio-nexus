@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif']
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// StitchCraft brand colors
+				sage: '#8AA29E',
+				terracotta: '#D77A61',
+				ivory: '#F5F3ED',
+				charcoal: '#333333'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +93,46 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in': {
+					'0%': {
+						transform: 'translateX(-100%)'
+					},
+					'100%': {
+						transform: 'translateX(0)'
+					}
+				},
+				'stitch-hover': {
+					'0%': {
+						transform: 'scale(1)',
+						boxShadow: '0 0 0 0 rgba(138, 162, 158, 0)'
+					},
+					'100%': {
+						transform: 'scale(1.05)',
+						boxShadow: '0 4px 12px 0 rgba(138, 162, 158, 0.3)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'slide-in': 'slide-in 0.5s ease-out',
+				'stitch-hover': 'stitch-hover 0.3s ease-out forwards'
+			},
+			backgroundImage: {
+				'yarn-texture': "url('/images/yarn-texture.png')",
+				'hero-pattern': "url('/images/hero-pattern.jpg')"
 			}
 		}
 	},
