@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Thread, BookHeart, Star, Flower, Heart, BookOpen } from "lucide-react";
+import { BookHeart, Star, Flower, Heart, BookOpen } from "lucide-react";
 
 export interface PatternProps {
   id: number;
@@ -15,7 +15,7 @@ export interface PatternProps {
 const patternIcon = (title: string) => {
   // Pick an icon to match pattern based on its name
   if (title.toLowerCase().includes('fox')) return <BookHeart className="text-terracotta" />;
-  if (title.toLowerCase().includes('blanket')) return <Thread className="text-sage" />;
+  if (title.toLowerCase().includes('blanket')) return <BookOpen className="text-sage" />;
   if (title.toLowerCase().includes('shawl')) return <Star className="text-yellow-600" />;
   if (title.toLowerCase().includes('pillow')) return <Flower className="text-pink-400" />;
   if (title.toLowerCase().includes('hat')) return <Heart className="text-pink-400" />;
