@@ -3,13 +3,13 @@ import { useState } from "react";
 import MainLayout from "@/components/layout/MainLayout";
 import ProductCard, { ProductProps } from "@/components/shop/ProductCard";
 
-// New product list: Crochet items w/ photos matching types & pinkish theme
+// Using solid color placeholders instead of images for a pinkish soft color theme
 const products: ProductProps[] = [
   {
     id: 1,
     title: "Crochet Flower Pillow",
-    // soft pink crochet flower pillow
-    image: "https://images.pexels.com/photos/8692516/pexels-photo-8692516.jpeg?auto=compress&w=800&q=80",
+    // soft pink crochet flower pillow color placeholder
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FFDEE2'/%3e%3c/svg%3e",
     price: 44.99,
     category: "Home Décor",
     customizable: true,
@@ -18,8 +18,8 @@ const products: ProductProps[] = [
   {
     id: 2,
     title: "Pastel Crochet Scarf",
-    // pink pastels and soft crochet yarn, best match for scarf
-    image: "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&w=800&q=80",
+    // pastel pink color placeholder for scarf
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FDE1D3'/%3e%3c/svg%3e",
     price: 32.99,
     category: "Wearables",
     customizable: true,
@@ -28,8 +28,8 @@ const products: ProductProps[] = [
   {
     id: 3,
     title: "Amigurumi Bunny Plush",
-    // pink amigurumi crochet bunny
-    image: "https://images.pexels.com/photos/1637894/pexels-photo-1637894.jpeg?auto=compress&w=800&q=80",
+    // soft pinkish plush color placeholder
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FFDEE2'/%3e%3c/svg%3e",
     price: 27.99,
     category: "Amigurumi",
     customizable: false,
@@ -38,8 +38,8 @@ const products: ProductProps[] = [
   {
     id: 4,
     title: "Macramé Wall Hanging",
-    // pink pastel wall hanging (crochet/macrame)
-    image: "https://images.pexels.com/photos/1108097/pexels-photo-1108097.jpeg?auto=compress&w=800&q=80",
+    // soft peach pink color placeholder
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FDE1D3'/%3e%3c/svg%3e",
     price: 59.99,
     category: "Home Décor",
     customizable: true,
@@ -48,8 +48,8 @@ const products: ProductProps[] = [
   {
     id: 5,
     title: "Chunky Crochet Beanie",
-    // knit/crochet beanie in blush/pink
-    image: "https://images.pexels.com/photos/3746225/pexels-photo-3746225.jpeg?auto=compress&w=800&q=80",
+    // warm blush pink placeholder
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FFDEE2'/%3e%3c/svg%3e",
     price: 24.99,
     category: "Wearables",
     customizable: true,
@@ -58,8 +58,8 @@ const products: ProductProps[] = [
   {
     id: 6,
     title: "Crochet Plant Hanger",
-    // pinkish yarn plant hanger, best match available
-    image: "https://images.pexels.com/photos/1108104/pexels-photo-1108104.jpeg?auto=compress&w=800&q=80",
+    // soft peach placeholder representing plant hanger
+    image: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3e%3crect width='400' height='400' fill='%23FDE1D3'/%3e%3c/svg%3e",
     price: 21.99,
     category: "Home Décor",
     customizable: false,
