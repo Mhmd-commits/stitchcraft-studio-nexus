@@ -3,64 +3,64 @@ import { useState } from "react";
 import MainLayout from "@/components/layout/MainLayout";
 import ProductCard, { ProductProps } from "@/components/shop/ProductCard";
 
-// Images sourced to visually match the Sweet Softies craft-fair crochet types, with a pinkish vibe
+// New product list: Crochet items w/ photos matching types & pinkish theme
 const products: ProductProps[] = [
   {
     id: 1,
-    title: "Hand-crafted Throw Pillow",
-    // Sweet Softies: https://www.sweetsofties.com/2022/03/craft-fair-roundup.html (crochet pillows)
-    image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=100&hue=330", // pastel/pink overlay, soft-by-proxy
-    price: 49.99,
+    title: "Crochet Flower Pillow",
+    // soft pink crochet flower pillow
+    image: "https://images.pexels.com/photos/8692516/pexels-photo-8692516.jpeg?auto=compress&w=800&q=80",
+    price: 44.99,
     category: "Home Décor",
     customizable: true,
-    slug: "hand-crafted-throw-pillow"
+    slug: "crochet-flower-pillow"
   },
   {
     id: 2,
-    title: "Cozy Winter Scarf",
-    // Sweet Softies: pastel pink scarf example
-    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=100&hue=330",
-    price: 34.99,
+    title: "Pastel Crochet Scarf",
+    // pink pastels and soft crochet yarn, best match for scarf
+    image: "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&w=800&q=80",
+    price: 32.99,
     category: "Wearables",
     customizable: true,
-    slug: "cozy-winter-scarf"
+    slug: "pastel-crochet-scarf"
   },
   {
     id: 3,
-    title: "Cute Amigurumi Bear",
-    // Sweet Softies: amigurumi animals, lots of pink and pastel toys
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=120&hue=330",
-    price: 29.99,
+    title: "Amigurumi Bunny Plush",
+    // pink amigurumi crochet bunny
+    image: "https://images.pexels.com/photos/1637894/pexels-photo-1637894.jpeg?auto=compress&w=800&q=80",
+    price: 27.99,
     category: "Amigurumi",
     customizable: false,
-    slug: "cute-amigurumi-bear"
+    slug: "amigurumi-bunny-plush"
   },
   {
     id: 4,
-    title: "Modern Wall Hanging",
-    // Sweet Softies: wall hangings/macrame, pinkish version
-    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=100&hue=330",
-    price: 69.99,
+    title: "Macramé Wall Hanging",
+    // pink pastel wall hanging (crochet/macrame)
+    image: "https://images.pexels.com/photos/1108097/pexels-photo-1108097.jpeg?auto=compress&w=800&q=80",
+    price: 59.99,
     category: "Home Décor",
     customizable: true,
-    slug: "modern-wall-hanging"
+    slug: "macrame-wall-hanging"
   },
   {
     id: 5,
-    title: "Hand-knit Beanie",
-    // Sweet Softies: beanies in blush/pastel
-    image: "https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=100&hue=330",
-    price: 27.99,
+    title: "Chunky Crochet Beanie",
+    // knit/crochet beanie in blush/pink
+    image: "https://images.pexels.com/photos/3746225/pexels-photo-3746225.jpeg?auto=compress&w=800&q=80",
+    price: 24.99,
     category: "Wearables",
     customizable: true,
-    slug: "hand-knit-beanie"
+    slug: "chunky-crochet-beanie"
   },
   {
     id: 6,
     title: "Crochet Plant Hanger",
-    // Sweet Softies: plant hangers, add a pink "look" for theme consistency
-    image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&sat=70&hue=330",
-    price: 19.99,
+    // pinkish yarn plant hanger, best match available
+    image: "https://images.pexels.com/photos/1108104/pexels-photo-1108104.jpeg?auto=compress&w=800&q=80",
+    price: 21.99,
     category: "Home Décor",
     customizable: false,
     slug: "crochet-plant-hanger"
@@ -116,4 +116,3 @@ const Shop = () => {
 };
 
 export default Shop;
-
